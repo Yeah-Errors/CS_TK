@@ -1,0 +1,100 @@
+mode: Rule
+mixed-port: 7890
+dns:
+    enable: true
+    nameserver: [223.5.5.5, 119.29.29.29, '[2400:3200::1]:53', 'https://1.12.12.12/dns-query']
+    enhanced-mode: fake-ip
+    fake-ip-filter: ['*.srv.nintendo.net', '*.stun.playstation.net', 'xbox.*.microsoft.com', '*.xboxlive.com', dns.msftncsi.com]
+ipv6: false
+tun:
+    enable: true
+    dns-hijack: ['any:53']
+proxies:
+    - { name: 'SG新加坡 01', type: vmess, server: bhef6p7hyjpodmkfp4hr.incomparablebeauty.top, port: 22193, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'SG新加坡 02', type: vmess, server: fuw4pcmhvhzkdaubztnb.incomparablebeauty.top, port: 22193, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'SG新加坡 03', type: vmess, server: mzbvsstmgehp1nuckult.incomparablebeauty.top, port: 19042, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'SG新加坡 04', type: vmess, server: doku1q2hdhf3qu82aqrk.incomparablebeauty.top, port: 19042, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'HK香港 01', type: vmess, server: nbhvhccmedwzqwv1q8dm.incomparablebeauty.top, port: 12842, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'HK香港 02', type: vmess, server: mjmtbgtzbzexhvje24ih.incomparablebeauty.top, port: 12842, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'HK香港 03', type: vmess, server: orutn7tvsp07kmyuy0qy.incomparablebeauty.top, port: 15226, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'HK香港 04', type: vmess, server: phgqpwm3yvbpj8gezb6s.incomparablebeauty.top, port: 15226, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'HK香港 05', type: vmess, server: uqjqctzgee4nf8mfwyuw.incomparablebeauty.top, port: 19723, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'HK香港 06', type: vmess, server: flcvoknf0afr7rh51pkj.incomparablebeauty.top, port: 19723, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'HK香港 07', type: vmess, server: kngtohf7ha3g1agpxdmc.incomparablebeauty.top, port: 31809, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'HK香港 08', type: vmess, server: nyddyuhw7r4sdyxo2iah.incomparablebeauty.top, port: 31809, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'HK香港 09', type: vmess, server: bdz1aj3lxdhhufv3jgxg.incomparablebeauty.top, port: 1234, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'TW台湾 01', type: vmess, server: 56sicecvqjnd7ugiqtxb.incomparablebeauty.top, port: 17954, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'TW台湾 02', type: vmess, server: 1kdurf9o8y6mwmrzeney.incomparablebeauty.top, port: 17954, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'TW台湾 03', type: vmess, server: nmu5ldqfdpgxtfyhcjui.incomparablebeauty.top, port: 12360, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'TW台湾 04', type: vmess, server: ztjcdmdvk0xzeaqu2auq.incomparablebeauty.top, port: 12360, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'KR韩国 01', type: vmess, server: xsnkc0hfym4xedgxax15.incomparablebeauty.top, port: 29543, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'KR韩国 02', type: vmess, server: ycnaynex1na22dqpwtuc.incomparablebeauty.top, port: 29543, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'KR韩国 03', type: vmess, server: xf285gfdygmjqvtppajw.incomparablebeauty.top, port: 16095, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'KR韩国 04', type: vmess, server: 7edx82wrs8wdkrnj6at2.incomparablebeauty.top, port: 16095, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'GB英国 01', type: vmess, server: o3k4ghbowul1o1bisldc.incomparablebeauty.top, port: 20516, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'GB英国 02', type: vmess, server: e1wq8ypwv1ickgrv9fc6.incomparablebeauty.top, port: 20516, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'PH菲律宾 01', type: vmess, server: 4sq4wsbivzp4wytxurh2.incomparablebeauty.top, port: 17887, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'MY马来西亚 01', type: vmess, server: fbobxj3gh6mdcbaugzqd.incomparablebeauty.top, port: 16139, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'VN越南 01', type: vmess, server: tdnggdtfdhyiqwhhu95f.incomparablebeauty.top, port: 13229, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'DE德国 01', type: vmess, server: 4mude1kdw51mazelrpxx.incomparablebeauty.top, port: 11356, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'DE德国 02', type: vmess, server: fz34yt4cce7csjeay25x.incomparablebeauty.top, port: 11356, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'JP日本 01', type: vmess, server: d1p4nhraabh01cejzb5a.incomparablebeauty.top, port: 41476, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'JP日本 02', type: vmess, server: yyho4uq3afkddgpxxpgw.incomparablebeauty.top, port: 41476, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'JP日本 03', type: vmess, server: vvrezazvhxn1g1pwvcj0.incomparablebeauty.top, port: 24563, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'JP日本 04', type: vmess, server: dwmy5xmrht8h5qbcwbvg.incomparablebeauty.top, port: 24563, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'TH泰国 01', type: vmess, server: 1hfzuxbzzq3248mq580f.incomparablebeauty.top, port: 11909, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'TR土耳其 01', type: vmess, server: 4yuprnu5hxqqnh30tmtx.incomparablebeauty.top, port: 15952, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'ID印度尼西亚 01', type: vmess, server: fbobxj3gh6mdcbaugzqd.incomparablebeauty.top, port: 15779, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'IN印度 01', type: vmess, server: v2ginbbpufb8mxy9qczj.incomparablebeauty.top, port: 18423, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'US美国 01', type: vmess, server: zhabfu9jqgi90zkrxm8q.incomparablebeauty.top, port: 15220, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'US美国 02', type: vmess, server: lvkb8vwhu4ydrdafl6zp.incomparablebeauty.top, port: 15220, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'US美国 03', type: vmess, server: nogmfro1scafiy35rrtb.incomparablebeauty.top, port: 16940, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'US美国 04', type: vmess, server: naiefu8ypmwj6jhe76ru.incomparablebeauty.top, port: 16940, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'MO澳门 01', type: vmess, server: fqmizgnwg00xip6n5q3g.incomparablebeauty.top, port: 17851, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: 'NG尼日利亚 01', type: vmess, server: fqmizgnwg00xip6n5q3g.incomparablebeauty.top, port: 17162, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+    - { name: '官网链接: ebay.com/usr/kongqitangguo', type: vmess, server: 152.67.201.172, port: 12345, uuid: 99ddf0bf-5dea-4865-8a8b-74e00c875519, alterId: 0, cipher: auto, udp: true }
+proxy-groups:
+    - { name: '🚀 节点选择', type: select, proxies: ['🕹 自动选择', 'SG新加坡 01', 'SG新加坡 02', 'SG新加坡 03', 'SG新加坡 04', 'HK香港 01', 'HK香港 02', 'HK香港 03', 'HK香港 04', 'HK香港 05', 'HK香港 06', 'HK香港 07', 'HK香港 08', 'HK香港 09', 'TW台湾 01', 'TW台湾 02', 'TW台湾 03', 'TW台湾 04', 'KR韩国 01', 'KR韩国 02', 'KR韩国 03', 'KR韩国 04', 'GB英国 01', 'GB英国 02', 'PH菲律宾 01', 'MY马来西亚 01', 'VN越南 01', 'DE德国 01', 'DE德国 02', 'JP日本 01', 'JP日本 02', 'JP日本 03', 'JP日本 04', 'TH泰国 01', 'TR土耳其 01', 'ID印度尼西亚 01', 'IN印度 01', 'US美国 01', 'US美国 02', 'US美国 03', 'US美国 04', 'MO澳门 01', 'NG尼日利亚 01', '官网链接: ebay.com/usr/kongqitangguo'] }
+    - { name: '📺 国际影视', type: select, proxies: ['🚀 节点选择',  'SG新加坡 01', 'SG新加坡 02', 'SG新加坡 03', 'SG新加坡 04', 'HK香港 01', 'HK香港 02', 'HK香港 03', 'HK香港 04', 'HK香港 05', 'HK香港 06', 'HK香港 07', 'HK香港 08', 'HK香港 09', 'TW台湾 01', 'TW台湾 02', 'TW台湾 03', 'TW台湾 04', 'KR韩国 01', 'KR韩国 02', 'KR韩国 03', 'KR韩国 04', 'GB英国 01', 'GB英国 02', 'PH菲律宾 01', 'MY马来西亚 01', 'VN越南 01', 'DE德国 01', 'DE德国 02', 'JP日本 01', 'JP日本 02', 'JP日本 03', 'JP日本 04', 'TH泰国 01', 'TR土耳其 01', 'ID印度尼西亚 01', 'IN印度 01', 'US美国 01', 'US美国 02', 'US美国 03', 'US美国 04', 'MO澳门 01', 'NG尼日利亚 01', '官网链接: ebay.com/usr/kongqitangguo'] }
+    - { name: '📽️ 内地影视', type: select, proxies: [DIRECT, '🚀 节点选择', 'SG新加坡 01', 'SG新加坡 02', 'SG新加坡 03', 'SG新加坡 04', 'HK香港 01', 'HK香港 02', 'HK香港 03', 'HK香港 04', 'HK香港 05', 'HK香港 06', 'HK香港 07', 'HK香港 08', 'HK香港 09', 'TW台湾 01', 'TW台湾 02', 'TW台湾 03', 'TW台湾 04', 'KR韩国 01', 'KR韩国 02', 'KR韩国 03', 'KR韩国 04', 'GB英国 01', 'GB英国 02', 'PH菲律宾 01', 'MY马来西亚 01', 'VN越南 01', 'DE德国 01', 'DE德国 02', 'JP日本 01', 'JP日本 02', 'JP日本 03', 'JP日本 04', 'TH泰国 01', 'TR土耳其 01', 'ID印度尼西亚 01', 'IN印度 01', 'US美国 01', 'US美国 02', 'US美国 03', 'US美国 04', 'MO澳门 01', 'NG尼日利亚 01', '官网链接: ebay.com/usr/kongqitangguo'] }
+    - { name: '🕹 自动选择', type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 300, proxies: ['SG新加坡 01', 'SG新加坡 02', 'SG新加坡 03', 'SG新加坡 04', 'HK香港 01', 'HK香港 02', 'HK香港 03', 'HK香港 04', 'HK香港 05', 'HK香港 06', 'HK香港 07', 'HK香港 08', 'HK香港 09', 'TW台湾 01', 'TW台湾 02', 'TW台湾 03', 'TW台湾 04', 'KR韩国 01', 'KR韩国 02', 'KR韩国 03', 'KR韩国 04', 'GB英国 01', 'GB英国 02', 'PH菲律宾 01', 'MY马来西亚 01', 'VN越南 01', 'DE德国 01', 'DE德国 02', 'JP日本 01', 'JP日本 02', 'JP日本 03', 'JP日本 04', 'TH泰国 01', 'TR土耳其 01', 'ID印度尼西亚 01', 'IN印度 01', 'US美国 01', 'US美国 02', 'US美国 03', 'US美国 04', 'NG尼日利亚 01'] }
+rule-providers:
+    Streaming: { type: http, behavior: classical, path: ./Provider/RuleSet/Streaming/Streaming.yaml, url: 'https://lucynakushinada.de/gh/HotKids/Rules/master/Clash/RuleSet/Streaming.yaml', interval: 86400 }
+    CNTV: { type: http, behavior: classical, path: ./Provider/RuleSet/Streaming/CNTV.yaml, url: 'https://lucynakushinada.de/gh/HotKids/Rules/master/Clash/RuleSet/CNTV.yaml', interval: 86400 }
+    private: { type: http, behavior: domain, url: 'https://lucynakushinada.de/gh/Loyalsoldier/clash-rules/release/private.txt', path: ./ruleset/private.yaml, interval: 86400 }
+    gfw: { type: http, behavior: domain, url: 'https://lucynakushinada.de/gh/Loyalsoldier/clash-rules/release/gfw.txt', path: ./ruleset/gfw.yaml, interval: 86400 }
+    cncidr: { type: http, behavior: ipcidr, url: 'https://lucynakushinada.de/gh/Loyalsoldier/clash-rules/release/cncidr.txt', path: ./ruleset/cncidr.yaml, interval: 86400 }
+rules:
+    - 'DOMAIN,lucynakushinada.de,DIRECT'
+    - 'RULE-SET,private,DIRECT'
+    - 'DOMAIN,api.smoot.apple.com,DIRECT'
+    - 'DOMAIN,captive.apple.com,DIRECT'
+    - 'DOMAIN,configuration.apple.com,DIRECT'
+    - 'DOMAIN,guzzoni.apple.com,DIRECT'
+    - 'DOMAIN,smp-device-content.apple.com,DIRECT'
+    - 'DOMAIN,xp.apple.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ess.apple.com,DIRECT'
+    - 'DOMAIN-SUFFIX,push-apple.com.akadns.net,DIRECT'
+    - 'DOMAIN-SUFFIX,push.apple.com,DIRECT'
+    - 'DOMAIN,aod.itunes.apple.com,DIRECT'
+    - 'DOMAIN,mesu.apple.com,DIRECT'
+    - 'DOMAIN,api.smoot.apple.cn,DIRECT'
+    - 'DOMAIN,gs-loc.apple.com,DIRECT'
+    - 'DOMAIN,mvod.itunes.apple.com,DIRECT'
+    - 'DOMAIN,streamingaudio.itunes.apple.com,DIRECT'
+    - 'DOMAIN-SUFFIX,lcdn-locator.apple.com,DIRECT'
+    - 'DOMAIN-SUFFIX,lcdn-registration.apple.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ls.apple.com,DIRECT'
+    - 'PROCESS-NAME,trustd,DIRECT'
+    - 'RULE-SET,Streaming,📺 国际影视'
+    - 'RULE-SET,CNTV,📽️ 内地影视'
+    - 'RULE-SET,gfw,🚀 节点选择'
+    - 'DOMAIN-SUFFIX,bing.com,🚀 节点选择'
+    - 'IP-CIDR,192.168.0.0/16,DIRECT'
+    - 'IP-CIDR,10.0.0.0/8,DIRECT'
+    - 'IP-CIDR,172.16.0.0/12,DIRECT'
+    - 'IP-CIDR,127.0.0.0/8,DIRECT'
+    - 'IP-CIDR,100.64.0.0/10,DIRECT'
+    - 'IP-CIDR6,fe80::/10,DIRECT'
+    - 'RULE-SET,cncidr,DIRECT'
+    - 'MATCH,🚀 节点选择'
